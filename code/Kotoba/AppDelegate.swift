@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil)
 		-> Bool
 	{
+		ApplyRuntimeHacks()
+
 		// Reset user defaults for UI tests
 		if ProcessInfo.processInfo.arguments.contains("UITEST")
 		{
